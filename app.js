@@ -2,9 +2,11 @@ const app = Vue.createApp({
     data() {
         return{
             title: 'The Final Empire',
+            author: 'Eric John',
+            age: '35',
         }
     }
 })
 
 
-app.amount('#app')
+app.mount('#app')
