@@ -1,6 +1,10 @@
-const app = vue.createApp({
-    // data, functions
-    template: '<h2>I am the template</h2>'
+const app = Vue.createApp({
+    data() {
+        return{
+            title: 'The Final Empire',
+        }
+    }
 })
+
 
 app.amount('#app')
