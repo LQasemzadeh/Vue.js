@@ -1,28 +1,21 @@
 const app = Vue.createApp({
     data() {
         return{
-            showBooks: false,
-            title: 'The Final Empire',
-            author: 'Eric John',
-            age: '35',
-            x: 0,
-            y: 0
+            showBooks: true,
+            books: [
+                { title: 'name of the wind', author: 'patrick rothfuss' },
+                { title: 'name of the war', author: 'massih orden' },
+                { title: 'name of the west', author: 'allen defuss' },
+            ]
+
         }
     },
     methods: {
         toggleShowBooks() {
             this.showBooks = !this.showBooks
         },
-        handleEvent(e, data) {
-            console.log('e, e.type')
-            if (data) {
-                console.log(data)
-            }
-        },
-        handleMousemove(e) {
-            this.x = e.offsetX
-            this.y = e.offsetY
-        }
+
+
     }
 
 })
